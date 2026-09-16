@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇴 罗马尼亚 (Romania) 01 - xiaohe
-  server: 205.237.109.166
+  server: 205.237.109.173
   port: 8443
   udp: true
   type: hysteria2
@@ -29,7 +29,7 @@ proxies:
   sni: www.amazon.com
   skip-cert-verify: true
 - name: 🇷🇴 罗马尼亚 (Romania) 04 - xiaohe
-  server: 85.204.107.185
+  server: 85.204.107.170
   port: 8443
   udp: true
   type: hysteria2
