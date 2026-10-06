@@ -4,22 +4,22 @@
   },
   "outbounds": [
     {
-      "type": "trojan",
+      "type": "vless",
       "tag": "🇨🇿 捷克 (Czech) 01 - xiaohe",
-      "server": "cz-musicc.moritech.net",
+      "server": "138.124.58.39",
       "server_port": 443,
-      "password": "f8b-U5TxjNRYKLvU0Js_6YeMCdj_82km",
+      "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
       "tls": {
         "enabled": true,
-        "server_name": "cz-musicc.moritech.net",
-        "insecure": true,
-        "alpn": [
-          "h2"
-        ]
+        "server_name": "fzo5i.ir46.90k.hh.ov0.kdns.fr",
+        "insecure": false
       },
       "transport": {
-        "type": "grpc",
-        "service_name": "grpcbeast"
+        "type": "ws",
+        "path": "/glasspanel/guest000_0_5de14443985f/",
+        "headers": {
+          "Host": "fzo5i.ir46.90k.hh.ov0.kdns.fr"
+        }
       }
     },
     {
