@@ -5,22 +5,26 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇦🇿 阿塞拜疆 (Azerbaijan) 01 - xiaohe",
-      "server": "94.20.141.53",
-      "server_port": 443,
-      "uuid": "f439e4fe-139b-4882-ad8b-a16176d09c88",
+      "tag": "🇪🇪 爱沙尼亚 (Estonia) 01 - xiaohe",
+      "server": "217.60.182.138",
+      "server_port": 8843,
+      "uuid": "f7274516-0050-4544-9462-0f1ca689db54",
       "tls": {
         "enabled": true,
-        "server_name": "eu63.cdn77.icu",
+        "server_name": "myschoolonline.cvedcmimikal.space",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
-          "public_key": "EltWI8AOqkN8lMjRycweRRoFRah5hu6xiKtgBmQOdE8",
-          "short_id": "1ed136481e0ede74"
+          "public_key": "XD-GOGR9K3rGRCfpytDaJZmtXOr7ZO6OdczpjUE0Dh8",
+          "short_id": "a4f8c92d"
         }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "46205b"
       }
     },
     {
@@ -28,14 +32,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇦🇿 阿塞拜疆 (Azerbaijan) 01 - xiaohe"
+        "🇪🇪 爱沙尼亚 (Estonia) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇦🇿 阿塞拜疆 (Azerbaijan) 01 - xiaohe"
+        "🇪🇪 爱沙尼亚 (Estonia) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
