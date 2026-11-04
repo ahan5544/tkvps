@@ -16,19 +16,12 @@
       }
     },
     {
-      "type": "vmess",
+      "type": "shadowsocks",
       "tag": "🇵🇱 波兰 (Poland) 02 - xiaohe",
-      "server": "54.37.131.126",
-      "server_port": 80,
-      "uuid": "059fda3e-5ca9-4fbd-dd89-01cc6d4bb5dd",
-      "security": "auto",
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "google.whatsapp.snapp.torob.basalam.hesanid8.ir."
-        }
-      }
+      "server": "pl140.vpnbook.com",
+      "server_port": 443,
+      "method": "chacha20-ietf-poly1305",
+      "password": "6heexyz"
     },
     {
       "type": "selector",
