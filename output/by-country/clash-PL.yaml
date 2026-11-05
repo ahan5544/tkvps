@@ -13,12 +13,18 @@ proxies:
   sni: browseexecutivejobopeningsandenhanceleadershipcareer.com
   skip-cert-verify: false
 - name: 🇵🇱 波兰 (Poland) 02 - xiaohe
-  server: pl140.vpnbook.com
-  port: 443
+  server: 84.23.52.120
+  port: 28450
   udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: 6heexyz
+  type: vless
+  uuid: 4d8132cb-f4e3-428c-91ff-2b4f7a868551
+  tls: true
+  servername: pl.sparxiecn.com
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /lovelive
 proxy-groups:
 - name: PROXIES
   type: select
