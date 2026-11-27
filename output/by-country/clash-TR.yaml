@@ -14,17 +14,46 @@ proxies:
   servername: turkey-ip1.mmdaqaorg.xyz
   skip-cert-verify: false
   client-fingerprint: chrome
+- name: 🇹🇷 土耳其 (Turkey) 02 - xiaohe
+  server: v2new.nimbaha9.ir
+  port: 8080
+  udp: true
+  type: vless
+  uuid: f279c19a-b324-40cf-af57-049f9b1b68f2
+  network: ws
+  ws-opts:
+    path: /XDS45
+    headers:
+      Host: v2new.nimbaha9.ir
+- name: 🇹🇷 土耳其 (Turkey) 03 - xiaohe
+  server: 104.21.44.113
+  port: 443
+  udp: true
+  type: vless
+  uuid: 963A4918-A630-29DA-A873-093CDF8AD784
+  tls: true
+  servername: still-bar-5702.vpnetwork3567.workers.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: still-bar-5702.vpnetwork3567.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇹🇷 土耳其 (Turkey) 01 - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 02 - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 03 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇹🇷 土耳其 (Turkey) 01 - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 02 - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 03 - xiaohe
 rules:
 - MATCH,PROXIES
