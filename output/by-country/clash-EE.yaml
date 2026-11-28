@@ -4,28 +4,28 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇫🇮 芬兰 (Finland) 01 - xiaohe
-  server: 65.109.171.194
-  port: 443
+- name: 🇪🇪 爱沙尼亚 (Estonia) 01 - xiaohe
+  server: 196.198.111.166
+  port: 8443
   udp: true
   type: vless
-  uuid: da14e323-6af7-406f-a5c2-1eb7975ada8b
+  uuid: f121ffc8-f6dc-4728-a871-a05e3f9cf8c5
   flow: xtls-rprx-vision
   tls: true
-  servername: mail1.besttotaldns.com
+  servername: usr-6b09ce88-api-v3.alcors.net
   skip-cert-verify: false
-  client-fingerprint: chrome
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇫🇮 芬兰 (Finland) 01 - xiaohe
+  - 🇪🇪 爱沙尼亚 (Estonia) 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇫🇮 芬兰 (Finland) 01 - xiaohe
+  - 🇪🇪 爱沙尼亚 (Estonia) 01 - xiaohe
 rules:
 - MATCH,PROXIES
